@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Dilly",
+    "last_name": "Polley",
+    "email": "dpolley0@networkadvertising.org",
+    "gender": "Male",
+    "ip_address": "28.23.157.104"
+  },
+  {
+    "id": 2,
+    "first_name": "Lawton",
+    "last_name": "Boij",
+    "email": "lboij1@redcross.org",
+    "gender": "Male",
+    "ip_address": "97.87.206.200"
+  },
+  {
+    "id": 3,
+    "first_name": "Timothee",
+    "last_name": "Bartholomew",
+    "email": "tbartholomew2@yale.edu",
+    "gender": "Male",
+    "ip_address": "254.120.142.195"
+  },
+  {
+    "id": 4,
+    "first_name": "Avram",
+    "last_name": "Ollivierre",
+    "email": "aollivierre3@deviantart.com",
+    "gender": "Agender",
+    "ip_address": "34.164.220.140"
+  },
+  {
+    "id": 5,
+    "first_name": "Becca",
+    "last_name": "Brazelton",
+    "email": "bbrazelton4@goo.gl",
+    "gender": "Female",
+    "ip_address": "73.162.70.57"
+  },
+  {
+    "id": 6,
+    "first_name": "Kent",
+    "last_name": "Davidov",
+    "email": "kdavidov5@tinypic.com",
+    "gender": "Non-binary",
+    "ip_address": "63.117.114.103"
+  },
+  {
+    "id": 7,
+    "first_name": "Cati",
+    "last_name": "Dilke",
+    "email": "cdilke6@ifeng.com",
+    "gender": "Female",
+    "ip_address": "149.84.146.221"
+  },
+  {
+    "id": 8,
+    "first_name": "Beau",
+    "last_name": "McGilben",
+    "email": "bmcgilben7@123-reg.co.uk",
+    "gender": "Male",
+    "ip_address": "119.43.23.2"
+  },
+  {
+    "id": 9,
+    "first_name": "Mirna",
+    "last_name": "Nolleth",
+    "email": "mnolleth8@msu.edu",
+    "gender": "Female",
+    "ip_address": "46.220.222.60"
+  },
+  {
+    "id": 10,
+    "first_name": "Lev",
+    "last_name": "Crumpton",
+    "email": "lcrumpton9@163.com",
+    "gender": "Male",
+    "ip_address": "20.172.91.15"
+  }
+]
