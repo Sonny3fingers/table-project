@@ -25,7 +25,7 @@ const UsersTableRow = ({ user, id, posts }) => {
 
   return (
     <tr
-      className="relative bg-slate-600 hover:bg-slate-500 transition-all ease-in cursor-pointer"
+      className="grid grid-cols-3 bg-slate-600 hover:bg-slate-500 transition-all ease-in cursor-pointer border-collapse"
       key={user.id}
       id={user.id}
     >
@@ -45,10 +45,15 @@ const UsersTableRow = ({ user, id, posts }) => {
       </td>
       <td className="border border-slate-400 p-2">{user.gender}</td>
       {isExpandRow && (
-        <td className="block w-full absolute top-full left-0 z-10 bg-slate-950 text-white">
-          <ul>
-            {userPosts.map((post) => (
-              <li key={post.id}>{post.title}</li>
+        <td className="col-span-3 bg-slate-600">
+          <ul className="flex flex-col p-2 justify-start items-start text-left overflow-hidden">
+            {userPosts.map((post, i) => (
+              <li
+                key={post.id}
+                className="p-2 hover:bg-slate-500 whitespace-nowrap"
+              >
+                {i + 1}. {post.title}
+              </li>
             ))}
           </ul>
         </td>

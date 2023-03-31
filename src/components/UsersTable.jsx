@@ -22,17 +22,11 @@ const UsersTable = () => {
     fetchData();
   }, []);
 
-  const userClickHandler = (e) => {
-    const selectedUserId = +e.target.id;
-    const userPostsData = getUserIdPosts(posts, selectedUserId);
-    setUserPosts(userPostsData);
-  };
-
   return (
-    <table className="table-auto text-center bg-slate-700 text-white p-4 rounded-3xl">
+    <table className="text-center bg-slate-700 text-white p-4 rounded-3xl border-collapse">
       <thead>
-        <tr>
-          <th className="border border-collapse border-slate-300 border-t-0 border-l-0 p-3 rounded-t-3xl ">
+        <tr className="grid grid-cols-3">
+          <th className="border border-collapse border-slate-300 border-t-0 border-l-0 p-3 rounded-tl-3xl ">
             Expand
           </th>
           <th className="border border-collapse border-t-0 border-slate-300 p-3">
