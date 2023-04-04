@@ -1,12 +1,13 @@
-import UsersTable from "./components/UsersTable";
+import Home from "./pages/Home";
+import BlogPost from "./pages/BlogPost";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div className="flex flex-col justify-center p-4">
-        <UsersTable />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/post/:id" element={<BlogPost />}></Route>
+    </Routes>
   );
 }
 
