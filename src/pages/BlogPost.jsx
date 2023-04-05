@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Button from "../components/Button";
 
 const BlogPost = () => {
@@ -12,19 +12,17 @@ const BlogPost = () => {
     setText(state.post.body);
   }, [state]);
 
-  const editPostHandler = () => {
-    console.log("Edit");
-  };
+  const navigate = useNavigate();
 
   const deletePostHandler = () => {
-    console.log("Delete");
+    navigate("/");
   };
 
   return (
     <div className="flex flex-col justify-center items-center bg-slate-200 sm:flex-row sm:flex-wrap sm:min-h-96">
       <div className="sm:w-1/2 w-full h-1/2 flex justify-center items-center bg-slate-200 p-4">
         <Link to="/">
-          <Button style={{ backgroundColor: "orange" }}>Back</Button>
+          <Button>Back</Button>
         </Link>
       </div>
       <div className="h-1/2 sm:w-1/2 sm:py-16 bg-slate-600">
@@ -38,12 +36,11 @@ const BlogPost = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center items-center gap-16 w-full sm:w-1/2 mb-4 p-16 bg-slate-200 sm:py-20">
-        <button
-          onClick={editPostHandler}
-          className="w-24 h-24 bg-blue-500 transition-all ease-in hover:bg-blue-600 text-white rounded-full self-start"
-        >
-          Edit
-        </button>
+        <Link to={`/edit/${state.post.id}`} state={state}>
+          <button className="w-24 h-24 bg-blue-500 transition-all ease-in hover:bg-blue-600 text-white rounded-full self-start">
+            Edit
+          </button>
+        </Link>
         <button
           onClick={deletePostHandler}
           className="w-24 h-24 bg-red-500 transition-all ease-in hover:bg-red-600 text-white rounded-full self-end"
